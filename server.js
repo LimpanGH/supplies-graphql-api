@@ -13,7 +13,7 @@ import express from "express";
 import { graphqlHTTP } from "express-graphql";
 
 mongoose.connect(
-  "mongodb+srv://fredriklindroth:4XHU0JIURD2huwS5@cluster0.x4lmd.mongodb.net/sample_supplies"
+  "mongodb+srv://yourusername:yourpassword@cluster0.x4lmd.mongodb.net/sample_supplies"
 );
 
 const db = mongoose.connection;
