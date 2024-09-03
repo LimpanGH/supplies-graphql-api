@@ -60,13 +60,14 @@
        console.log('Connected to MongoDB');
    });
 
-  export default mongoose;
+   export default mongoose;
 
    ```
 
    Replace `'mongodb+srv://yourusername:yourpassword@yourmongocloudurl/sample_supplies'` with your actual MongoDB URI.
 
 2. **Define the Sale Mongoose Schema**:
+
    Create a file named `models.js` to define your data schema:
 
    ```javascript
@@ -95,7 +96,7 @@
 
    const Sale = mongoose.model('Sale', SaleMongooseSchema);
 
-  export default Sale;
+   export default Sale;
    ```
 
 ### Step 3: Set Up the GraphQL Schema
@@ -276,12 +277,14 @@
    ```
 
 2. **Access GraphiQL**:
+
    Open your browser and navigate to `http://localhost:4000/graphql`. Here, you can run GraphQL queries and mutations.
 
-### Step 6: Test GraphQL Queries 
+### Step 6: Test GraphQL Queries
 
 **Get All Sales**:
-   Run the following query to retrieve all sales with the summarized item data:
+   
+   - Run the following query to retrieve all sales with the summarized item data:
 
    ```graphql
    {
