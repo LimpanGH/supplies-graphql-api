@@ -17,6 +17,7 @@ marp: true
 
 ## Länkar
 
+- [Bra sammanfattning av GraphQL vs REST](https://www.youtube.com/watch?v=yWzKJPw_VzM&t=72s)
 - [Import vs require](https://www.scaler.com/topics/nodejs/require-vs-import-nodejs/)
 - [Mongoose queries](https://mongoosejs.com/docs/queries.html)
 
