@@ -1,0 +1,37 @@
+---
+marp: true
+---
+
+# Codealong och repetition med GraphQL
+
+## Idag
+
+- Import istället för require (se länk för sammanfattning)
+  - Något modernare sätt att importera
+- Repetition GraphQL (med databasen sample_supplies.sales)
+- Refaktorering
+- Filtera med .where och begränsa med .limit
+- Summera (aggregera) värden
+
+---
+
+## Länkar
+
+- [Import vs require](https://www.scaler.com/topics/nodejs/require-vs-import-nodejs/)
+- [Mongoose queries](https://mongoosejs.com/docs/queries.html)
+
+---
+
+## Pseudokod
+
+1. Projekt setup
+    - Installera express express-graphql graphql mongoose nodenmon
+2. Skapa uppkoppling mot databas (sample_supplies.sales)
+3. Skapa mongoose schema (beskriver dokumentet i databasen)
+4. Definera GraphQL schema (omvandlar queries i /grapghql till databasfrågor)
+5. Skapa query för att hämta alla sales och specifik sale
+6. Refaktorera om till separata filer.
+7. Begränsa antal dokument i sales med .limit
+8. Filtrera på storeLocation med .where
+9. Lägg till fältet totalPrice på SaleType som räknar ut den totala summan sales varje Sale
+10. Lägg till query-funktionen totalAmountPerLocation som räknar ut total summan sales for en specifik storeLocation
